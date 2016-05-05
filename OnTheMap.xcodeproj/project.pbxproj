@@ -55,13 +55,61 @@
 			isa = PBXGroup;
 			children = (
 				4FFDA75F1CDB6DE000BF18C0 /* AppDelegate.swift */,
-				4FFDA7611CDB6DE000BF18C0 /* ViewController.swift */,
-				4FFDA7631CDB6DE000BF18C0 /* Main.storyboard */,
-				4FFDA7661CDB6DE000BF18C0 /* Assets.xcassets */,
-				4FFDA7681CDB6DE000BF18C0 /* LaunchScreen.storyboard */,
+				4FFDA7711CDB6F9100BF18C0 /* Model */,
+				4FFDA7721CDB6FA500BF18C0 /* View */,
+				4FFDA7731CDB6FB100BF18C0 /* Controller */,
+				4FFDA7761CDB72EE00BF18C0 /* Assets */,
 				4FFDA76B1CDB6DE000BF18C0 /* Info.plist */,
 			);
 			path = OnTheMap;
+			sourceTree = "<group>";
+		};
+		4FFDA7711CDB6F9100BF18C0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4FFDA7741CDB707900BF18C0 /* Clients */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		4FFDA7721CDB6FA500BF18C0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4FFDA7731CDB6FB100BF18C0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4FFDA7611CDB6DE000BF18C0 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		4FFDA7741CDB707900BF18C0 /* Clients */ = {
+			isa = PBXGroup;
+			children = (
+				4FFDA7751CDB708E00BF18C0 /* Udacity */,
+			);
+			name = Clients;
+			sourceTree = "<group>";
+		};
+		4FFDA7751CDB708E00BF18C0 /* Udacity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Udacity;
+			sourceTree = "<group>";
+		};
+		4FFDA7761CDB72EE00BF18C0 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				4FFDA7681CDB6DE000BF18C0 /* LaunchScreen.storyboard */,
+				4FFDA7661CDB6DE000BF18C0 /* Assets.xcassets */,
+				4FFDA7631CDB6DE000BF18C0 /* Main.storyboard */,
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
