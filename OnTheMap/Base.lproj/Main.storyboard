@@ -21,6 +21,9 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LoginBackgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="W7l-SR-d1q">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UdacityLogo" translatesAutoresizingMaskIntoConstraints="NO" id="GIw-R3-I41">
+                                <rect key="frame" x="253" y="48" width="94" height="96"/>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sVB-p0-BuQ">
                                 <rect key="frame" x="144" y="189" width="313" height="253"/>
                                 <subviews>
@@ -73,9 +76,6 @@
                                     <constraint firstItem="aMI-ad-IpK" firstAttribute="top" secondItem="sVB-p0-BuQ" secondAttribute="top" constant="58" id="th8-N4-u5K"/>
                                 </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UdacityLogo" translatesAutoresizingMaskIntoConstraints="NO" id="GIw-R3-I41">
-                                <rect key="frame" x="253" y="48" width="94" height="96"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account? Sign up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KRo-cL-BDC">
                                 <rect key="frame" x="152" y="399" width="297" height="32"/>
                                 <constraints>
@@ -94,10 +94,11 @@
                             <constraint firstItem="GIw-R3-I41" firstAttribute="centerX" secondItem="W7l-SR-d1q" secondAttribute="centerX" id="IFV-ms-u7x"/>
                             <constraint firstItem="KRo-cL-BDC" firstAttribute="centerX" secondItem="sVB-p0-BuQ" secondAttribute="centerX" id="LK8-d4-pwr"/>
                             <constraint firstItem="sVB-p0-BuQ" firstAttribute="centerX" secondItem="W7l-SR-d1q" secondAttribute="centerX" id="M2z-Ho-buy"/>
-                            <constraint firstItem="sVB-p0-BuQ" firstAttribute="centerY" secondItem="W7l-SR-d1q" secondAttribute="centerY" constant="15.5" id="R7b-a6-AE4"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KRo-cL-BDC" secondAttribute="bottom" constant="169" id="Uwn-gz-wjf"/>
+                            <constraint firstItem="sVB-p0-BuQ" firstAttribute="centerY" secondItem="W7l-SR-d1q" secondAttribute="centerY" priority="750" constant="15.5" id="R7b-a6-AE4"/>
                             <constraint firstItem="GIw-R3-I41" firstAttribute="top" secondItem="W7l-SR-d1q" secondAttribute="top" constant="48" id="Vul-AR-Php"/>
+                            <constraint firstItem="KRo-cL-BDC" firstAttribute="top" secondItem="cMl-bt-cxm" secondAttribute="bottom" constant="17" id="me7-Bm-yps"/>
                             <constraint firstItem="W7l-SR-d1q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ov9-7w-PDP"/>
+                            <constraint firstItem="sVB-p0-BuQ" firstAttribute="top" relation="greaterThanOrEqual" secondItem="GIw-R3-I41" secondAttribute="bottom" constant="32" id="r3V-dP-yhS"/>
                             <constraint firstAttribute="trailing" secondItem="W7l-SR-d1q" secondAttribute="trailing" id="yPb-85-mH9"/>
                         </constraints>
                     </view>
