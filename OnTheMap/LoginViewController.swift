@@ -25,7 +25,6 @@ class LoginViewController: UIViewController {
 
     @IBAction func loginButtonClicked(sender: UIButton) {
         let udacityClient = UdacityClient.sharedInstance()
-        let loginViewController = self
         
         udacityClient.authenticateWithLoginViewController(self) { (success, errorString) in
             if !success {
@@ -34,7 +33,7 @@ class LoginViewController: UIViewController {
                     let alertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: { (UIAlertAction) in })
                     
                     alertController.addAction(alertAction)
-                    loginViewController.presentViewController(alertController, animated: true, completion: nil)
+                    self.presentViewController(alertController, animated: true, completion: nil)
                 })
                 return
             }
