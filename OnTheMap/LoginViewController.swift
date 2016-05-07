@@ -25,12 +25,16 @@ class LoginViewController: UIViewController {
 
     @IBAction func loginButtonClicked(sender: UIButton) {
         let udacityClient = UdacityClient.sharedInstance()
+        let loginViewController = self
         
         udacityClient.authenticateWithLoginViewController(self) { (success, errorString) in
             if !success {
-                performUIUpdatesOnMain({ 
-                    let alertView = UIAlertView.init(title: "Error", message: errorString!, delegate: nil, cancelButtonTitle: "OK")
-                    alertView.show()                    
+                performUIUpdatesOnMain({
+                    let alertController = UIAlertController(title: "Error", message: errorString, preferredStyle: UIAlertControllerStyle.Alert)
+                    let alertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: { (UIAlertAction) in })
+                    
+                    alertController.addAction(alertAction)
+                    loginViewController.presentViewController(alertController, animated: true, completion: nil)
                 })
                 return
             }
