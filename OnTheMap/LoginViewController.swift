@@ -52,5 +52,9 @@ class LoginViewController: UIViewController {
         }
     }
     
+    @IBAction func signupButtonClicked(sender: UIButton) {
+        let url = NSURL(string: UdacityClient.URLs.Signup)
+        UIApplication.sharedApplication().openURL(url!)
+    }
 }
 

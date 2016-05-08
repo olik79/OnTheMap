@@ -65,6 +65,9 @@
                                         <state key="normal" title="Don't have an account? Sign up">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="signupButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v0o-aR-xpd"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>

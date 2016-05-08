@@ -38,4 +38,8 @@ extension UdacityClient {
         // error related
         static let Error = "error"
     }
+    
+    struct URLs {
+        static let Signup = "https://www.udacity.com/account/auth#!/signup"
+    }
 }
