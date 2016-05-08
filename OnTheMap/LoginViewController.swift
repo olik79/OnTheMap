@@ -49,12 +49,22 @@ class LoginViewController: UIViewController {
 
             print("Received session ID: \(sessionID)")
             print("Received user key: \(userKey)")
+            
+            performUIUpdatesOnMain({ 
+                self.completeLogin()                
+            })
         }
     }
     
     @IBAction func signupButtonClicked(sender: UIButton) {
         let url = NSURL(string: UdacityClient.URLs.Signup)
         UIApplication.sharedApplication().openURL(url!)
+    }
+    
+    func completeLogin() {
+        let mapAndTableTabBarController =
+            storyboard!.instantiateViewControllerWithIdentifier("MapAndTable")
+        presentViewController(mapAndTableTabBarController, animated: true, completion: nil)
     }
 }
 
