@@ -127,9 +127,9 @@
 		4FFDA7751CDB708E00BF18C0 /* Udacity */ = {
 			isa = PBXGroup;
 			children = (
+				4F84410A1CDCA36200E19196 /* UdacityConstants.swift */,
 				4F8441061CDC94AD00E19196 /* UdacityClient.swift */,
 				4F8441081CDC9DD200E19196 /* UdacityConvenience.swift */,
-				4F84410A1CDCA36200E19196 /* UdacityConstants.swift */,
 			);
 			name = Udacity;
 			sourceTree = "<group>";
