@@ -120,10 +120,7 @@ extension UdacityClient {
                 loginCompletionListener(success: false, userKey: nil, sessionID: nil, errorString: "Account key is no String")
                 return
             }
-            
-            UdacityClient.sharedInstance().sessionID = sessionID
-            UdacityClient.sharedInstance().userKey = userKey
-            
+
             loginCompletionListener(success: true, userKey: userKey, sessionID: sessionID, errorString: nil)
         }
         
