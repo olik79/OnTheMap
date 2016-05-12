@@ -10,6 +10,11 @@ import UIKit
 import Foundation
 
 class MapAndTableTabBarController: UITabBarController {
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBarHidden = false
+    }
+    
     override func viewDidLoad() {
         // fetch data from parse
         

@@ -13,6 +13,16 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBarHidden = true
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController?.navigationBarHidden = false
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -62,9 +72,7 @@ class LoginViewController: UIViewController {
     }
     
     func completeLogin() {
-        let mapAndTableTabBarController =
-            storyboard!.instantiateViewControllerWithIdentifier("MapAndTable")
-        presentViewController(mapAndTableTabBarController, animated: true, completion: nil)
+        performSegueWithIdentifier("MapAndTable", sender: self)
     }
 }
 
